@@ -8,6 +8,8 @@ def generate_prime_factors(number):
     while divisor <= number:
         if number%divisor == 0:
             factors.append(divisor)
-        divisor += 1
+            number /= divisor
+        else:
+            divisor += 1
     return factors
 

@@ -20,3 +20,8 @@ def test_returns_3_given_3():
     """when generate_prime_factors is called with 3, the list [3] is returned"""
     assert generate_prime_factors(3) == [3]
 
+def test_returns_2_2_given_4():
+    """when generate_prime_factors is called with 4, the list [2, 2] is returned."""
+    assert generate_prime_factors(4) == [2,2]
+
+
