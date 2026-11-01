@@ -11,3 +11,7 @@ def test_raises_value_error_given_not_an_int():
 def test_returns_empty_list_given_1():
     """when generate_prime_factors is called with 1, an empty list is returned"""
     assert generate_prime_factors(1) == []
+
+def test_returns_2_given_2():
+    """when generate_prime_factors is called with 2, the list [2] is returned"""
+    assert generate_prime_factors(2) == [2]

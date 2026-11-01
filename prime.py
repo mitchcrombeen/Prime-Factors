@@ -4,5 +4,7 @@ def generate_prime_factors(number):
     if not isinstance(number,int):
         raise ValueError("Input must be a whole number")
     factors = []
+    if number%2 == 0:
+        factors.append(2)
     return factors
 
