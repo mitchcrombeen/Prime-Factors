@@ -15,3 +15,8 @@ def test_returns_empty_list_given_1():
 def test_returns_2_given_2():
     """when generate_prime_factors is called with 2, the list [2] is returned"""
     assert generate_prime_factors(2) == [2]
+
+def test_returns_3_given_3():
+    """when generate_prime_factors is called with 3, the list [3] is returned"""
+    assert generate_prime_factors(3) == [3]
+
