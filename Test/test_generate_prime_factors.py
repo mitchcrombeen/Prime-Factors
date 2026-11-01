@@ -7,3 +7,7 @@ def test_raises_value_error_given_not_an_int():
     not an integer (e.g. a string or float), a ValueError is raised."""
     with pytest.raises(ValueError):
         generate_prime_factors(3.14)
+
+def test_returns_empty_list_given_1():
+    """when generate_prime_factors is called with 1, an empty list is returned"""
+    assert generate_prime_factors(1) == []
